@@ -75,10 +75,12 @@ createAdmin();
 // Routes
 const authRoutes = require('./routes/auth');
 const contentRoutes = require('./routes/content');
-
+const newsRoutes = require('./routes/newsRoutes');
+// app.use('/', newsRoutes); // ✅ URL: /og/news/:id
 
 app.use('/api/auth', authRoutes);
 app.use('/api/content/', contentRoutes);  
+app.use('/', newsRoutes); // ✅ URL: /og/news/:id
 
 
 // Protected routes
