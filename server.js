@@ -38,11 +38,11 @@ const upload = multer({
 // Middleware
 app.use(cors({
   origin: [
-    'http://localhost:5173', // for local dev
-    'https://harshit-ka-kalam-se.netlify.app', // your main deployed frontend
-    'https://profound-chebakia-9830f2.netlify.app' // any other frontend you use
+    'https://profound-chebakia-9830f2.netlify.app',
+    'http://localhost:5173',
+   
   ],
-  credentials: true,
+  credentials: true
 }));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
