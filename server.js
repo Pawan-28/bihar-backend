@@ -38,7 +38,7 @@ const upload = multer({
 // Middleware
 app.use(cors({
   origin: [
-    'http://localhost:5173',
+    'https://profound-chebakia-9830f2.netlify.app/',
     
   ],
   credentials: true,
